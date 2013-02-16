@@ -278,11 +278,11 @@ class PHPVariables
         //}
         //Console.Write(code.ToString());
 
-        //SortedSet<string> bla = new SortedSet<string>();
+        //SortedSet<string> sortedSet  = new SortedSet<string>();
         //MatchCollection mc = Regex.Matches(code.ToString(), @"\$[A-Za-z0-9_]+");
         //foreach (var item in mc)
         //{
-        //    bla.Add(item.ToString());
+        //    sortedSet.Add(item.ToString());
         //}
 
         List<string> sortedVariables = variables.ToList();

@@ -44,13 +44,13 @@ class Tubes
 
     static int IsSolution(long g)
     {
-        long bla = 0;
+        long curr = 0;
         for (int i = 0; i < tubes.Length; i++)
         {
-            bla += tubes[i] / g;
+            curr += tubes[i] / g;
         }
 
-        return bla.CompareTo(m);
+        return curr.CompareTo(m);
     }
 }
 
