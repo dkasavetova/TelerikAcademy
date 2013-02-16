@@ -1,0 +1,16 @@
+body {
+	background-color: #99FFFF;
+	color: #003399;
+	font-family: Helvetica;
+}
+h1 {
+	font-style : italic;
+}
+
+a:visited {
+	color: #666;
+}
+
+dt {
+	font-style : italic;
+}

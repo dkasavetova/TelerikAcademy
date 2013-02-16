@@ -1,0 +1,73 @@
+body, fieldset, img, p{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Verdana;
+	
+}
+div#wrapper {
+	width: 720px;
+	margin: 5px;
+}
+	div#wrapper nav {
+		font-weight: bold;
+		text-align: center;
+	}
+		div#wrapper nav a {
+			color: #00A9EF;
+		}
+
+	div#wrapper hr {
+		border-top:2px solid black;
+		width: 98%;
+	}
+
+	div#wrapper div#laptop-container {
+		width: 70%;
+		padding: 2px;
+		float: left;
+	}
+	div#wrapper div#laptop-container, div#wrapper div#laptop-container fieldset {
+		border: 2px solid #000;
+	}
+		div#wrapper div#laptop-container fieldset {
+			width: 48%;
+			display: inline-block;
+		}
+			div#wrapper div#laptop-container fieldset legend {
+				margin-left: 15%;
+			}
+			div#wrapper div#laptop-container fieldset img {
+				float: left;
+				margin: 2px;
+			}
+			
+			div#wrapper div#laptop-container fieldset p {
+				display: inline-block;
+				margin: 8px 0 8px 8px;
+			}	
+				div#wrapper div#laptop-container fieldset p:first-of-type {
+					margin-top: 20px;
+				}	
+				div#wrapper div#laptop-container fieldset p:last-of-type {
+					margin-left: 28px;
+				}
+		
+	div#wrapper div#range-calc {
+		width: 25%;
+		float: left;
+		margin-left: 20px;
+	}
+		div#wrapper div#range-calc p {
+			margin: 15px 0;
+		}
+			div#wrapper div#range-calc p:first-of-type {
+				margin-top: 35%;
+			}
+			div#wrapper div#range-calc p input {
+				margin-left: 8px;
+				width: 85%;
+			}	
+

@@ -1,0 +1,14 @@
+body > div {
+	width: 80%;
+}
+
+div {
+	background-color: #000;
+	border: 1px solid #f00;
+	padding-right: 10%;
+	border-radius: 60px;
+}
+
+div#last {
+	display: none;
+}

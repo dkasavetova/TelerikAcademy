@@ -1,0 +1,52 @@
+
+body {
+	background-color: #595959;
+	font-family: arial;
+	color: #aaa;
+}
+a {
+	color: #dbc981;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+dt {
+	color: #eee;
+	font-style: italic;
+	float: left;
+	width: 150px;
+}
+dt:after {
+	content: ":";
+}
+dt:first-of-type {
+	color: #aaa;
+	font-style: normal;
+	font-size: 150%;
+	width: auto;
+	margin-right: 5px;
+}
+dd:nth-of-type(2):before {
+	content: url("../images/green-circle.png");
+	width: 10px;
+
+
+}
+
+dd {
+	margin: 0 0 0 160px;
+	padding: 0 0 1em 0;
+}
+dd:first-of-type {
+	font-size: 150%;
+	margin: 0;
+}
+dd:last-of-type {
+	color: #d86835;
+}
+
+.alert {
+	color: #d1100c;
+}

@@ -1,0 +1,154 @@
+body, p, h1, h2, ul, li, a, button, input {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Arial;
+	font-size: 12px;
+}
+ul {
+	list-style-type: none;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+div#wrapper {
+	width: 860px;
+	border: 1px solid #000;
+	overflow: hidden;
+	background-color: #f1f1f1;
+	margin: 5px;
+}
+	div#wrapper >  nav {
+		width: 21%;
+		float: left;
+		margin: 2px;
+	}
+		div#wrapper >  nav  p{
+			font-weight: bold;
+			padding-left: 25px;
+			margin-top: 15px;
+			background-image: url(../images/home.png);
+			background-repeat: no-repeat;
+			line-height: 2em;
+			background-position: 0px 1px;
+		}
+	
+		div#wrapper > nav h2{
+			font-size: 12px;
+			color: #8A0000;
+			margin-top: 15px;
+		}
+
+	div#wrapper > section {
+		width: 54%;
+		float: right;
+		padding: 1%;
+	}
+		div#wrapper > section  h1{
+			font-size:20px;
+			line-height: 3em;
+		}
+	
+		div#wrapper > section hr {
+			border-color: #b0b0b0;
+			color: #b0b0b0;
+		}
+	
+	div#wrapper section {
+		background-color: #fff;
+		border: 1px solid #b0b0b0;
+		margin: 1px;
+	}
+		div#wrapper section  button{
+			width: 100px;
+			height: 20px;
+			border: 1px solid black;
+			background-color: #fff;
+		}
+		
+			div#wrapper section  button.prev {
+				background-image: url(../images/left.png);
+				background-repeat: no-repeat;
+				background-position: 1px 4px;
+			}
+			div#wrapper section  button.next {
+				background-image: url(../images/right.png);
+				background-repeat: no-repeat;
+				background-position: 87px 4px;
+			}
+
+
+		div#wrapper section  p{
+			margin: 15px 0px;
+		}
+		div#wrapper section a, div#wrapper aside section a {
+			color: #8A0000;
+			text-decoration: underline;
+		}
+		
+		div#wrapper section a {
+			display: inline-block;
+			margin-bottom: 10px;
+		}
+			
+		div#wrapper section a:hover, div#wrapper aside a:hover{
+			text-decoration: none;
+		}
+			div#wrapper section article {
+				overflow: hidden;
+			}
+				div#wrapper section article:first-of-type p {
+					font-weight: bold;
+				}
+		
+				div#wrapper section article header, div#wrapper aside section header  {
+					background-color: #808080;
+					color: #fff;
+				}	
+				
+				div#wrapper section article header {
+					padding-left: 5px;
+				}
+					div#wrapper section article header h2, div#wrapper aside section header h2 {
+						font-size: 14px;
+					}
+				div#wrapper section article img {
+					float: left;
+					margin-right: 15px;
+					margin-bottom: 30px;
+				}
+	
+	div#wrapper > aside {
+		width: 21%;
+		float: right;
+		text-align: center;
+	}
+		div#wrapper  aside section article{
+			padding: 4px;
+		}
+		
+		div#wrapper  aside section article input[type=text]{
+			width: 60%;
+			margin: 5px 3px;
+			border: 1px solid #94ADC5;
+		}
+		
+		div#wrapper  aside section article img{
+			display: block;
+			margin: auto;
+			margin-left: 20%;
+		}
+
+		div#wrapper  aside section a {
+			display: inline;
+		}
+		
+
+	

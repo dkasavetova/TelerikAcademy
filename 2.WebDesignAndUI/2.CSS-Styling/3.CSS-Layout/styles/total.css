@@ -1,0 +1,108 @@
+ form, label, input, p , h1{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Verdana;
+	font-size: 13px;
+	color: #a4a4a4;
+}
+
+section {
+	width: 658px;
+	background-color: #3b3b3b;
+	border: 1px solid #806850;
+	border-radius: 10px;
+	margin: 30px;
+}
+	section > header {
+		position: absolute;
+	}
+		section > header label {
+			display: inline-block;
+			height: 40px;
+			width: 200px;
+			text-align: right;
+			padding: 10px;
+			vertical-align: middle;
+			font-family: Georgia;
+			font-size: 20px;
+			line-height: 1.7em;
+			color: #fff;
+			background-image: url(../images/display.png);
+			background-repeat:no-repeat;
+			background-position: 10px 10px;
+		}
+		
+		section > header input {
+			margin: 10px;
+		}
+		
+			input::-webkit-input-placeholder {
+				color: #000;
+				padding-left:10px;
+			}
+			input::-moz-input-placeholder {
+				color: #000;
+				padding-left:10px;
+			}
+			input::-input-placeholder {
+				color: #000;
+				padding-left:10px;
+			}
+			
+			section > header input[type=submit] {
+				background: url(../images/button.png) 0 0 no-repeat #3A3A3A;
+				width: 56px;
+				height: 28px;
+				border: none;
+				color: #fff;
+			}
+
+	section div.shadow{
+		height: 10px;
+		margin-top: 68px;
+		border-top-left-radius: 300px 10px;
+		border-top-right-radius: 300px 10px;
+		box-shadow: 0 0 20px 2px #000;
+		width: 98%;
+		margin: 68px 1% 0;
+	}
+	section article {
+		margin-top: -10px;
+		background-color: #3b3b3b;
+		border-radius: 0 0 10px 10px;
+	}
+	
+	section article header  {
+		padding: 20px 10px;
+	}
+	
+	section article header h1 {
+		color: #FBD61A;
+		font-size: 28px;
+		font-family: Georgia;
+		font-weight: normal;
+	}
+	
+	section article p {
+		margin: 2px 50px 2px 10px;
+	}
+		section article p span {
+			color: #fff;
+		}
+	
+		section article p:last-of-type {
+			margin-bottom: 10px;
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

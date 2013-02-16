@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<meta charset="utf-8" />
+	<link href="styles/calc.css" rel="stylesheet" />
+</head>
+<body>
+<div id="calc">
+	<div id="window">
+		<div id="title-bar">
+			<span id="title">Calculator</span>
+			<!-- icon title 3 buttons -->
+		</div>
+		<div id="menu">
+			<p>View</p>
+			<p>Edit</p>
+			<p>Help</p>
+		</div>	
+		<div id="container">	
+			<div id="display">
+				<input type="text" value="8854455" />
+			</div>
+			<div id="bin-display-container">
+				<table>
+					<tr>
+						<td>0000</td>
+						<td>0000</td>
+						<td>0000</td>
+						<td>0000</td>
+						<td>0000</td>
+						<td>0000</td>
+						<td>0000</td>
+						<td>0000</td>
+					</tr>
+					<tr>
+						<td colspan="4" class="left">63</td>
+						<td colspan="3" class="left">47</td>
+						<td class="right">32</td>
+					</tr>
+					<tr>
+						<td>0000</td>
+						<td>0000</td>
+						<td>1000</td>
+						<td>0111</td>
+						<td>0001</td>
+						<td>1011</td>
+						<td>1011</td>
+						<td>0111</td>
+					</tr>
+					<tr>
+						<td colspan="4" class="left">31</td>
+						<td colspan="3" class="left">15</td>
+						<td class="right">0</td>
+					</tr>
+				</table>
+			</div>
+			<div id="selectors">
+				<div id="base-selectors">
+					<input type="radio" name="base" value="hex" id="hex"><label for="hex">Hex</label><br>
+					<input type="radio" name="base" value="dec" id="dec" checked><label for="dec">Dec</label><br>
+					<input type="radio" name="base" value="oct" id="oct"><label for="oct">Oct</label><br>
+					<input type="radio" name="base" value="bin" id="bin"><label for="bin">Bin</label>
+				</div>
+				<div id="word-size-selectors">
+					<input type="radio" name="word-size" value="64" id="qword" checked><label for="qword">Qword</label><br>
+					<input type="radio" name="word-size" value="32" id="dword"><label for="dword">Dword</label><br>
+					<input type="radio" name="word-size" value="16" id="word"><label for="word">Word</label><br>
+					<input type="radio" name="word-size" value="8" id="byte"><label for="dword">Byte</label>
+				</div>
+			</div>
+			<table id="buttons-grid">
+				<tr>
+					<td><button type="button" disabled>&nbsp;</button></td>
+					<td><button type="button" class="operator ">Mod</button></td>
+					<td><button type="button" class="digit" disabled>A</button></td>
+					<td><button type="button" class="memory">MC</button></td>
+					<td><button type="button" class="memory">MR</button></td>
+					<td><button type="button" class="memory">MS</button></td>
+					<td><button type="button" class="memory">M+</button></td>
+					<td><button type="button" class="memory">M-</button></td>
+				</tr>
+				<tr>
+					<td><button type="button" class="operator">(</button></td>
+					<td><button type="button" class="operator">)</button></td>
+					<td><button type="button" class="digit" disabled>B</button></td>
+					<td><button type="button" class="operator big">&#x2190;</button></td>
+					<td><button type="button" class="operator">CE</button></td>
+					<td><button type="button" class="operator">C</button></td>
+					<td><button type="button" class="operator">&#xb1;</button></td>
+					<td><button type="button" class="operator" disabled>&#x221a;</button></td>
+				</tr>
+				<tr>
+					<td><button type="button" class="operator">RoL</button></td>
+					<td><button type="button" class="operator">RoR</button></td>
+					<td><button type="button" class="digit" disabled>C</button></td>
+					<td><button type="button" class="digit">7</button></td>
+					<td><button type="button" class="digit">8</button></td>
+					<td><button type="button" class="digit">9</button></td>
+					<td><button type="button" class="operator">/</button></td>
+					<td><button type="button" class="operator" disabled>%</button></td>
+				</tr>
+				<tr>
+					<td><button type="button" class="operator">Or</button></td>
+					<td><button type="button" class="operator">Xor</button></td>
+					<td><button type="button" class="digit" disabled>D</button></td>
+					<td><button type="button" class="digit">4</button></td>
+					<td><button type="button" class="digit">5</button></td>
+					<td><button type="button" class="digit">6</button></td>
+					<td><button type="button" class="operator">*</button></td>
+					<td><button type="button" class="operator" disabled>1/<span class="math">x</span></button></td>
+				</tr>
+				<tr>
+					<td><button type="button" class="operator">Lsh</button></td>
+					<td><button type="button" class="operator">Rsh</button></td>
+					<td><button type="button" class="digit" disabled>E</button></td>
+					<td><button type="button" class="digit">1</button></td>
+					<td><button type="button" class="digit">2</button></td>
+					<td><button type="button" class="digit">3</button></td>
+					<td><button type="button" class="operator">-</button></td>
+					<td rowspan="2"><button type="button" class="operator big">=</button></td>
+				</tr>
+				<tr>
+					<td><button type="button" class="operator">Not</button></td>
+					<td><button type="button" class="operator">And</button></td>
+					<td><button type="button" class="digit" disabled>F</button></td>
+					<td colspan="2"><button type="button" class="digit">0</button></td>
+					<td><button type="button" class="digit" disabled>.</button></td>
+					<td><button type="button" class="operator">+</button></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+</body>
+</html>

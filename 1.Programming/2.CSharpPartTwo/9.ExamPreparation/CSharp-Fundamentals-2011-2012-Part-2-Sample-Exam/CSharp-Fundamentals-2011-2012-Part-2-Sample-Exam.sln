@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpCleanCode", "CSharpCleanCode\CSharpCleanCode.csproj", "{56C51CBC-2E0D-4E1D-AA63-CEC8050EE8D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3DMaxWalk", "3DMaxWalk\3DMaxWalk.csproj", "{DC1D1723-4ADE-419B-84A6-C9A3E9DB4ACF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56C51CBC-2E0D-4E1D-AA63-CEC8050EE8D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56C51CBC-2E0D-4E1D-AA63-CEC8050EE8D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56C51CBC-2E0D-4E1D-AA63-CEC8050EE8D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56C51CBC-2E0D-4E1D-AA63-CEC8050EE8D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC1D1723-4ADE-419B-84A6-C9A3E9DB4ACF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC1D1723-4ADE-419B-84A6-C9A3E9DB4ACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC1D1723-4ADE-419B-84A6-C9A3E9DB4ACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC1D1723-4ADE-419B-84A6-C9A3E9DB4ACF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

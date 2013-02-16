@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title> Register </title>
+</head>
+<body>
+	<form method="post" action="#">
+		<table border="1">
+			<tfoot>
+				<tr>
+					<td colspan="4">
+						<input type="submit" value="Submit" tabindex="18"/>
+						<input type="reset" value="Clear This Form" tabindex="19"/>
+					</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td><label for="lastName">Last Name</label></td>
+					<td colspan="3"><input type="text" id="lastName" tabindex="1" autofocus/></td>
+				</tr>
+				<tr>
+					<td><label for="firstName">First Name</label></td>
+					<td colspan="3"><input type="text" id="firstName" tabindex="2"/></td>
+				</tr>
+				<tr>
+					<td><label for="address">Address</label></td>
+					<td colspan="3"><textarea id="address" tabindex="3"></textarea></td>
+				</tr>
+				<tr>
+					<td><label for="city">City</label></td>
+					<td><input type="text" id="city" tabindex="4" /></td>
+                    <td><label for="state">State</label></td>
+                    <td><input type="text" id="state" tabindex="5" /></td>    
+				</tr>
+                <tr>
+					<td><label for="postalCode">Postal/Zip Code</label></td>
+					<td colspan="3"><input type="text" id="postalCode" tabindex="6" /></td>
+				</tr>
+                <tr>
+					<td><label for="country">Country</label></td>
+					<td colspan="3">
+                        <select id="country" tabindex="7">
+                            <option value="bg" selected="selected">Bulgaria</option>
+                            <option value="uk"> United Kingdom</option>
+                        </select>
+						
+
+					</td>
+				</tr>
+				<tr>
+					<td><label for="countryCode">Phone (country code, area code, number)</label></td>
+					<td colspan="3">
+                        (+<input type="tel" id="countryCode" tabindex="8" />)
+                        <input type="tel" tabindex="9" />-
+                        <input type="tel" tabindex="10" />
+					</td>
+				</tr>
+				<tr>
+					<td><label for="email">Email</label></td>
+					<td colspan="3"><input type="email" id="email" tabindex="11" placeholder="example@example.com" /></td>
+				</tr>
+				<tr>
+					<td><label for="month">Birth Day</label></td>
+					<td colspan="3">
+                        <label for="month">Month</label>
+                        <input type="text" id="month" tabindex="11" />
+                        <label for="day">Day</label>
+                        <input type="text" id="day" tabindex="12" />
+                        <label for="year">Year (4 digits)</label>
+                        <input type="text" id="year" tabindex="13" />
+					</td>
+				</tr>
+				<tr>
+					<td><label for="gender">Gender</label></td>
+					<td colspan="3">
+                        <select id="gender" tabindex="14">
+                            <option value="1" selected="selected">Male</option>
+                            <option value="0">Female</option>
+                        </select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="startSpring">Starting date</label></td>
+					<td colspan="3">
+                        <input type="radio" name="start" value="Spring2013" id="startSpring" tabindex="15" />
+                        <label for="startSpring">Spring 2013</label>
+                        <input type="radio" name="start" value="Summer2013" id="startSummer" tabindex="16"/>
+                        <label for="startSummer">Summer 2013</label>
+                    </td>
+				</tr>
+				<tr>
+					<td><label for="comments">Comments/Questions</label></td>
+					<td colspan="3"><textarea id="comments" tabindex="17"></textarea></td>
+				</tr>
+				
+			</tbody>
+		</table>
+	</form>
+</body>
+</html>

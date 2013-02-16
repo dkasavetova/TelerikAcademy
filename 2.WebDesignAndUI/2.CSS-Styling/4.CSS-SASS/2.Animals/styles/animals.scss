@@ -1,0 +1,41 @@
+body, ul, li, label, img, input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body
+{
+	ul {
+		list-style-type: none;
+		margin: 10px;
+
+		li {
+			display: inline-block;
+
+			label {
+				img {
+					width: 150px;
+					display: inline-block;
+				}
+			}
+		}
+	}
+
+	input {
+		&[type="radio"] {
+			display: none; 
+		}
+
+		&:checked {
+			& + img {
+				display: inline-block;
+				margin-left: 10px;
+			}
+		}
+	}
+
+	img {
+		display: none;
+	}
+}

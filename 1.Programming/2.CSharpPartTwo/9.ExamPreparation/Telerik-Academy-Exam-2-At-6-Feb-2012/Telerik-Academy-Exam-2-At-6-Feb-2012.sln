@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. 3DStars", "3DStars\4. 3DStars.csproj", "{EDC65D15-CE24-4B96-AC73-3FCBC68ECD72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Tubes", "Tubes\3. Tubes.csproj", "{315EE9B7-BB39-4C59-B0AC-D86C44780FC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. PHPVariables", "PHPVariables\1. PHPVariables.csproj", "{142D762D-9C9C-40B4-9597-3D0DAFC74C41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDC65D15-CE24-4B96-AC73-3FCBC68ECD72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDC65D15-CE24-4B96-AC73-3FCBC68ECD72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDC65D15-CE24-4B96-AC73-3FCBC68ECD72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDC65D15-CE24-4B96-AC73-3FCBC68ECD72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{315EE9B7-BB39-4C59-B0AC-D86C44780FC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{315EE9B7-BB39-4C59-B0AC-D86C44780FC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{315EE9B7-BB39-4C59-B0AC-D86C44780FC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{315EE9B7-BB39-4C59-B0AC-D86C44780FC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{142D762D-9C9C-40B4-9597-3D0DAFC74C41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{142D762D-9C9C-40B4-9597-3D0DAFC74C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{142D762D-9C9C-40B4-9597-3D0DAFC74C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{142D762D-9C9C-40B4-9597-3D0DAFC74C41}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

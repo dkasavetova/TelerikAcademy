@@ -1,0 +1,25 @@
+body {
+	font-family: Verdana;
+}
+nav {
+	font-weight: bold;
+	text-align: center;
+}
+	nav a {
+		color: #00A9EF;
+	}
+
+table, table table table {
+	border: none;
+	text-align: center;
+}
+
+fieldset, table table {
+	border: 2px solid black;
+}
+
+hr {
+	border-top:2px solid black;
+}
+
+

@@ -1,0 +1,67 @@
+body, img, p, button, h1 {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial;
+	font-size: 12px;
+}
+
+section {
+	width: 434px;
+	background-color: #eee;
+	margin: 10px;
+	padding: 20px 10px;
+	border-radius: 5px;
+}
+	section h1 {
+		font-weight: normal;
+		font-size: 16px;
+	}
+	section article {
+		margin-top: 44px;
+		overflow: hidden;
+		position: relative;
+	}
+	
+		section article, section article img {
+			border: 1px solid #a8a8a8;
+		}
+		
+		section article img {
+			margin: 17px;
+			float: left;
+		}
+		
+		section article p {
+			margin: 17px;
+		}
+		
+		section article footer {
+			display: inline-block;
+			position: absolute;
+			bottom: 17px;
+			right: 17px;
+		}
+			section article footer button{
+				
+				background-image: url(../images/btn-bg.png);
+				padding: 5px 19px;
+				line-height: 1em;
+				border: 1px solid #8a0000;
+				border-top-color: #cf080a;
+				color: #fff;
+			}
+
+/*		
+.clearfix {
+   zoom:1;
+}
+.clearfix: after {
+   content: ""; 
+   display: block; 
+   clear: both; 
+   height: 0; 
+}
+*/

@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. MathExpression", "MathExpression\1. MathExpression.csproj", "{D77D39DF-97A9-4147-A287-40BDA940C97A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Trapezoid", "Trapezoid\3. Trapezoid.csproj", "{287793D8-FAB6-4DB3-9689-1A13F151B30C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. OddNumber", "OddNumber\4. OddNumber.csproj", "{3C1D0C54-F87C-4D16-866C-E1167CC12221}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. FallDown", "FallDown\5. FallDown.csproj", "{82994263-6CAE-49B0-9824-FB7D1F5C44DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D77D39DF-97A9-4147-A287-40BDA940C97A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D77D39DF-97A9-4147-A287-40BDA940C97A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D77D39DF-97A9-4147-A287-40BDA940C97A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D77D39DF-97A9-4147-A287-40BDA940C97A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{287793D8-FAB6-4DB3-9689-1A13F151B30C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{287793D8-FAB6-4DB3-9689-1A13F151B30C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{287793D8-FAB6-4DB3-9689-1A13F151B30C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{287793D8-FAB6-4DB3-9689-1A13F151B30C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C1D0C54-F87C-4D16-866C-E1167CC12221}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C1D0C54-F87C-4D16-866C-E1167CC12221}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C1D0C54-F87C-4D16-866C-E1167CC12221}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C1D0C54-F87C-4D16-866C-E1167CC12221}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82994263-6CAE-49B0-9824-FB7D1F5C44DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82994263-6CAE-49B0-9824-FB7D1F5C44DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82994263-6CAE-49B0-9824-FB7D1F5C44DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82994263-6CAE-49B0-9824-FB7D1F5C44DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

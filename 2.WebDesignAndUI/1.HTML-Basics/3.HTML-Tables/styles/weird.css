@@ -1,0 +1,9 @@
+table, td {
+	border: 1px solid #CCC;
+}
+
+td {
+	min-width: 30px;
+	text-align: center;
+	padding: 2px;
+}

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShipDamage", "ShipDamage\ShipDamage.csproj", "{DB21B9DA-42E5-4A8B-B7F9-0E6FC98BFDF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeAllLoveBits", "WeAllLoveBits\WeAllLoveBits.csproj", "{91AC0E23-C64B-4126-85A1-7FDB8C499F76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pillars", "Pillars\Pillars.csproj", "{FE9C2EC3-34CE-463F-82F6-BDA74F36D780}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB21B9DA-42E5-4A8B-B7F9-0E6FC98BFDF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB21B9DA-42E5-4A8B-B7F9-0E6FC98BFDF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB21B9DA-42E5-4A8B-B7F9-0E6FC98BFDF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB21B9DA-42E5-4A8B-B7F9-0E6FC98BFDF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91AC0E23-C64B-4126-85A1-7FDB8C499F76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91AC0E23-C64B-4126-85A1-7FDB8C499F76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91AC0E23-C64B-4126-85A1-7FDB8C499F76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91AC0E23-C64B-4126-85A1-7FDB8C499F76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE9C2EC3-34CE-463F-82F6-BDA74F36D780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE9C2EC3-34CE-463F-82F6-BDA74F36D780}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE9C2EC3-34CE-463F-82F6-BDA74F36D780}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE9C2EC3-34CE-463F-82F6-BDA74F36D780}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

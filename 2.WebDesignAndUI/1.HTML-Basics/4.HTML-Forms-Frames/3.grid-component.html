@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8" />
+    <title>Grid Component</title>
+	<link rel="stylesheet" type="text/css" href="styles/grid.css" />
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="6">
+                    Drag a column header and drop it here to group by that column
+                </th>
+            </tr>
+            <tr>
+                <th><label for="productID">ProductID</label></th>
+                <th><label for="productName">Product name</label></th>
+                <th><label for="unitPrice">Unit price</label></th>
+                <th>Quantity per unit</th>
+                <th>Units in stock</th>
+                <th>Discontinued</th>
+            </tr>
+            <tr>
+                <th><input type="text" id="productID"/></th>
+                <th><input type="text" id="productName" /></th>
+                <th>
+					<input type="text" id="unitPrice" />
+					<button class="button"> </button>
+				</th>
+                <th><input type="text" id="qtyPerUnit" /></th>
+                <th>
+					<input type="text" id="unitsInStock" />
+					<button class="button"> </button>
+				</th>
+                <th>
+					<input type="checkbox" id="discontiued" />
+					<button class="button"> </button>
+				</th>
+            </tr>
+        </thead>
+        <tfoot>
+			<tr>
+				<td colspan="6"> 
+					<span id="pagination"> 
+						<button id="firstButton"></button>
+						<button id="prevButton"></button>
+						<a href="#">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<a href="#">5</a>
+						<a href="#">6</a>
+						<a href="#">7</a>
+						<a href="#">8</a>
+						<a href="#">9</a>
+						<a href="#">10</a>
+						<button id="nextButton"></button>
+						<button id="lastButton"></button>
+						<label for="pageSize">Page size:</label>
+						<select id="pageSize">
+							<option value="5">5</option>
+							<option value="10" selected="selected">10</option>
+						</select>
+					</span>
+					<span id="totalPages">
+						100 items in 10 pages
+					</span>		
+				</td>
+			</tr>
+        </tfoot>
+        <tbody>
+			<tr>
+				<td>1</td>
+				<td>Chai</td>
+				<td>$18.50</td>
+				<td>10 boxes x 20 bags</td>
+				<td>39</td>
+				<td><input type="checkbox" /></td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Chai</td>
+				<td>$18.50</td>
+				<td>10 boxes x 20 bags</td>
+				<td>39</td>
+				<td><input type="checkbox" /></td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Chai</td>
+				<td>$18.50</td>
+				<td>10 boxes x 20 bags</td>
+				<td>39</td>
+				<td><input type="checkbox" /></td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Chai</td>
+				<td>$18.50</td>
+				<td>10 boxes x 20 bags</td>
+				<td>39</td>
+				<td><input type="checkbox" /></td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Chai</td>
+				<td>$18.50</td>
+				<td>10 boxes x 20 bags</td>
+				<td>39</td>
+				<td><input type="checkbox" /></td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Chai</td>
+				<td>$18.50</td>
+				<td>10 boxes x 20 bags</td>
+				<td>39</td>
+				<td><input type="checkbox" /></td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Chai</td>
+				<td>$18.50</td>
+				<td>10 boxes x 20 bags</td>
+				<td>39</td>
+				<td><input type="checkbox" /></td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Chai</td>
+				<td>$18.50</td>
+				<td>10 boxes x 20 bags</td>
+				<td>39</td>
+				<td><input type="checkbox" /></td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Chai</td>
+				<td>$18.50</td>
+				<td>10 boxes x 20 bags</td>
+				<td>39</td>
+				<td><input type="checkbox" /></td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Chai</td>
+				<td>$18.50</td>
+				<td>10 boxes x 20 bags</td>
+				<td>39</td>
+				<td><input type="checkbox" /></td>
+			</tr>
+        </tbody>
+    </table>
+</body>
+</html>

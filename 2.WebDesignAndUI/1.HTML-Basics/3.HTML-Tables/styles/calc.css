@@ -1,0 +1,35 @@
+
+table, td{
+	border: 1px solid black;
+}
+
+input {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	
+	font-family: Verdana;
+	font-size: 150%;
+}
+
+input[type=button]{
+	background-color: #DDD;
+	min-height: 50px;
+	min-width: 50px;
+	height: 100%;
+	width: 100%;	
+}
+
+input:hover[type=button]{
+	background-color: #CCC;	
+}
+
+input:active[type=button]{
+	background-color: #AAA;	
+}
+
+input[type=text]{
+	min-height: 50px;
+	min-width: 100%;
+}
+

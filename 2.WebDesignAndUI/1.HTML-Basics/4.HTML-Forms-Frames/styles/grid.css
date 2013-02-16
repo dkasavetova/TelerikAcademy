@@ -1,0 +1,25 @@
+button {
+	min-width: 23px;
+	min-height: 23px;
+}
+.button {
+	background-image: url(../images/omgwtf.png);
+}
+#firstButton{
+	background-image: url(../images/first.png);
+}
+#prevButton{
+	background-image: url(../images/prev.png);
+}
+#nextButton{
+	background-image: url(../images/next.png);
+}
+#lastButton{
+	background-image: url(../images/last.png);
+}
+#pagination {
+	float: left;
+}
+#totalPages {
+	float: right;
+}

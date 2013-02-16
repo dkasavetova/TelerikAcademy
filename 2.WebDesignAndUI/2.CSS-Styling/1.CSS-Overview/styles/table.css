@@ -1,0 +1,70 @@
+body {
+	font-family:Calibri, Trebuchet MS, Arial, Tahoma;
+	font-size: 120%;
+	line-height: 200%;
+}
+
+table {
+	width: 800px;
+	border-spacing : 0;
+}
+tr:nth-child(2n) {
+	background-color: #ececec;
+}
+
+td {
+ 	border-left: 3px solid #cacaca;
+	border-right: 3px solid #fefefe;
+}
+tr:nth-child(2n) td {
+	border-right: 3px solid #eee;
+}
+td:first-of-type, th:first-of-type  {
+	border-left: none;
+}
+td:last-of-type, th:last-of-type {
+	border-right: none;
+}
+
+
+th {
+	background-color: #5cc006;
+	font-weight: normal;
+	padding-left: 10px;
+	text-align: left;
+	color:  #fff;
+	border-right: 3px solid #6dd117;
+	/*border-top: 3px solid #6dd117;*/
+	
+	border-bottom: 3px solid #3aa004;
+	border-left: 3px solid #3aa004;
+	
+}
+td {
+	padding-left: 10px;
+	text-align: left;
+}
+
+td.mexico {
+	background-image: url("../images/flag-mexico.png");
+	background-repeat: no-repeat;
+	background-position: 10px 5px;
+	background-size: 30px;
+	padding-left: 50px;
+}
+
+td.germany {
+	background-image: url("../images/flag-germany.png");
+	background-repeat: no-repeat;
+	background-position: 10px 5px;
+	background-size: 30px;
+	padding-left: 50px;
+}
+
+td.uk{
+	background-image: url("../images/flag-uk.png");
+	background-repeat: no-repeat;
+	background-position: 10px 5px;
+	background-size: 30px;
+	padding-left: 50px;
+}
