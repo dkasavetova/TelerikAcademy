@@ -104,7 +104,7 @@ public class BitArray64: IEnumerable<int>
 
     private class BitArray64Enumerator : IEnumerator
     {
-        private int index;
+        private int index = -1;
         private ulong bits;
 
         public BitArray64Enumerator(ulong bits)
@@ -128,7 +128,7 @@ public class BitArray64: IEnumerable<int>
 
         public void Reset()
         {
-            index = 0;
+            index = -1;
         }
     }
 }
