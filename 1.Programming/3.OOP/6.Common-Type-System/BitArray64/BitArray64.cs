@@ -55,7 +55,6 @@ public class BitArray64: IEnumerable<int>
         }
     }
 
-
     IEnumerator IEnumerable.GetEnumerator()
     {
         return new BitArray64Enumerator(bits);
@@ -117,7 +116,7 @@ public class BitArray64: IEnumerable<int>
         {
             get 
             {
-                return (bits & (ulong)(1 << index)) != 0 ? 1 : 0;
+                return (bits & ((ulong)1 << index)) != 0 ? 1 : 0;
             }
         }
 
