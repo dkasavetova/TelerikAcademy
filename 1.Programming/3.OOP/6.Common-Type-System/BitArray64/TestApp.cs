@@ -21,7 +21,14 @@ class TestApp
             bits[i] = 0;
         }
 
+
         Console.WriteLine(bits);
+
+        //foreach example
+        foreach (var item in bits)
+        {
+            Console.WriteLine(item);
+        }
     }
 }
 
