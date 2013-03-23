@@ -1,12 +1,11 @@
 ﻿//For info about the used algorithms check CLRS Introduction to Algorithms Chapter 12
 
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-class BST<TKey, TValue> : IEnumerable<KeyValuePair<TKey, TValue>>, ICloneable where TKey : IComparable<TKey>  
+class BST<TKey, TValue> : ICloneable where TKey : IComparable<TKey> 
 {
     //Fields
     private TreeNode root = null;
@@ -34,27 +33,7 @@ class BST<TKey, TValue> : IEnumerable<KeyValuePair<TKey, TValue>>, ICloneable wh
         }
     }
 
-    public ICollection<TKey> Keys
-    {
-        get
-        {
-            ICollection<TKey> keys = new List<TKey>();
-            InorderTreeWalk(this.root, x => keys.Add(x.Key));
-            return keys;
-        }
-    }
-
-    public ICollection<TValue> Values
-    {
-        get
-        {
-            ICollection<TValue> values = new List<TValue>();
-            InorderTreeWalk(this.root, x => values.Add(x.Value));
-            return values;
-        }
-    }
-
-    // Public Methods ----------------------------------------
+    // Methods ----------------------------------------
     public void Add(TKey key, TValue value)
     {
         TreeNode newNode = new TreeNode(key, value, null, null, null);
@@ -77,13 +56,46 @@ class BST<TKey, TValue> : IEnumerable<KeyValuePair<TKey, TValue>>, ICloneable wh
         this.root = null;
     }
 
+    public ICollection<TKey> Keys
+    {
+        get
+        {
+            ICollection<TKey> keys = new List<TKey>();
+            InorderTreeWalk(this.root, x => keys.Add(x.Key));
+            return keys;
+        }
+    }
+
+    public ICollection<TValue> Values
+    {
+        get
+        {
+            ICollection<TValue> values = new List<TValue>();
+            InorderTreeWalk(this.root, x => values.Add(x.Value));
+            return values;
+        }
+    }
+
     public override string ToString()
     {
         StringBuilder sb = new StringBuilder();
         InorderTreeWalk(this.root, x => sb.AppendFormat("[K: {0}; V: {1}] ", x.Key, x.Value));
         return sb.ToString();
+
+        //StringBuilder sb = new StringBuilder();
+        //ToStringHelper(this.root, sb);
+        //return sb.ToString();
     }
 
+    //private void ToStringHelper(TreeNode x, StringBuilder sb) 
+    //{
+    //    if (x != null) 
+    //    {
+    //        ToStringHelper(x.Left, sb);
+    //        sb.AppendFormat("[K: {0}; V: {1}] ", x.Key, x.Value);
+    //        ToStringHelper(x.Right, sb);
+    //    }
+    //}
 
     public override int GetHashCode()
     {
@@ -132,36 +144,6 @@ class BST<TKey, TValue> : IEnumerable<KeyValuePair<TKey, TValue>>, ICloneable wh
     public static bool operator !=(BST<TKey, TValue> first, BST<TKey, TValue> second)
     {
         return !(first == second);
-    }
-
-    //IEnumerable Methods -----------------------------
-    public IEnumerator<KeyValuePair<TKey, TValue>> GetEnumerator()
-    {
-        IList<KeyValuePair<TKey, TValue>> elems = new List<KeyValuePair<TKey, TValue>>();
-        InorderTreeWalk(this.root, x => elems.Add(new KeyValuePair<TKey,TValue>(x.Key, x.Value)));
-
-        foreach (var elem in elems)
-        {
-            yield return elem;
-        }
-    }
-
-    IEnumerator IEnumerable.GetEnumerator()
-    {
-        return this.GetEnumerator();
-    }
-
-    // ICloneable Methods -----------------------------
-    object ICloneable.Clone()
-    {
-        return this.Clone();
-    }
-
-    public BST<TKey, TValue> Clone()
-    {
-        BST<TKey, TValue> newTree = new BST<TKey, TValue>();
-        PreorderTreeWalk(this.root, x => newTree.Add(x.Key, x.Value));
-        return newTree;
     }
 
     // Private Methods --------------------------------
@@ -235,11 +217,10 @@ class BST<TKey, TValue> : IEnumerable<KeyValuePair<TKey, TValue>>, ICloneable wh
         {
             parentNode.Right = newNode;
         }
-        else
+        else 
         {
             parentNode.Value = newNode.Value;
         }
-
     }
 
     private void Delete(TreeNode node)
@@ -267,25 +248,23 @@ class BST<TKey, TValue> : IEnumerable<KeyValuePair<TKey, TValue>>, ICloneable wh
         }
     }
 
-    //move subtree v at the position of subtree u
     private void Transplant(TreeNode u, TreeNode v)
     {
-        if (u.Parent == null)//the element we are transplanting to is the root of the tree
+        if (u.Parent == null)
         {
             this.root = v;
         }
-        else if (u.Equals(u.Parent.Left))//the element we are transplanting to is the left child of it's parent
+        else if (u.Equals(u.Parent.Left))
         {
-            // u = v;
-            u.Parent.Left = v;  
+            u.Parent.Left = v; // u = v;
         }
-        else  //the element we are transplanting to is the right child of it's parent
+        else
         {
             u.Parent.Right = v;
         }
-        if (v != null) //the element we are transplanting exists
+        if (v != null)
         {
-            v.Parent = u.Parent; //fixing the parent of the the transplanted element
+            v.Parent = u.Parent;
         }
     }
 
@@ -297,6 +276,54 @@ class BST<TKey, TValue> : IEnumerable<KeyValuePair<TKey, TValue>>, ICloneable wh
         }
         return node;
     }
+
+    // ICloneable Methods -----------------------------
+    object ICloneable.Clone()
+    {
+        return this.Clone();
+    }
+
+    public BST<TKey, TValue> Clone()
+    {
+        //BST<TKey, TValue> newTree = new BST<TKey, TValue>();
+        //newTree.root = CloneLeftRight(this.root);
+        //ParentFix(newTree.root);
+        //return newTree;
+
+        BST<TKey, TValue> newTree = new BST<TKey, TValue>();
+        PreorderTreeWalk(this.root, x => newTree.Add(x.Key, x.Value));
+        return newTree;
+    }
+
+    // ICloneable Helper Methods -----------------------
+    //private TreeNode CloneLeftRight(TreeNode node)
+    //{
+    //    if (node != null)
+    //    {
+    //        TreeNode newNode = new TreeNode(
+    //            node.Key,
+    //            node.Value,
+    //            CloneLeftRight(node.Left),
+    //            CloneLeftRight(node.Right),
+    //            null);
+    //        return newNode;
+    //    }
+    //    return null;
+    //}
+
+    //private void ParentFix(TreeNode node)
+    //{
+    //    if (node.Left != null)
+    //    {
+    //        node.Left.Parent = node;
+    //        ParentFix(node.Left);
+    //    }
+    //    if (node.Right != null)
+    //    {
+    //        node.Right.Parent = node;
+    //        ParentFix(node.Right);
+    //    }
+    //}
 
     //Inner class
     private class TreeNode

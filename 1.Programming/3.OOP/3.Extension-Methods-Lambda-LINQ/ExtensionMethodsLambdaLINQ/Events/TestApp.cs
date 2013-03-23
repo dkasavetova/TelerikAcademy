@@ -27,7 +27,7 @@ class TestApp
         }
     }
 
-    static void timer_Tick(object sender, EventArgs e)
+    static void timer_Tick(object sender)
     {
         Console.Beep();
     }

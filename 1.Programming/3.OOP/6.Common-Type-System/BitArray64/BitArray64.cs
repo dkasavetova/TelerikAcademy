@@ -57,7 +57,8 @@ public class BitArray64: IEnumerable<int>
 
     IEnumerator IEnumerable.GetEnumerator()
     {
-        return new BitArray64Enumerator(bits);
+        //return new BitArray64Enumerator(bits);
+        return this.GetEnumerator();
     }
 
     public override bool Equals(object obj)

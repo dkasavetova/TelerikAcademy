@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 class TestApp
 {
@@ -21,7 +22,10 @@ class TestApp
             bits[i] = 0;
         }
 
-
+        IEnumerator<int> e = bits.GetEnumerator();
+        e.MoveNext();
+        Console.WriteLine();
+       
         Console.WriteLine(bits);
 
         //foreach example

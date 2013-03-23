@@ -11,6 +11,12 @@ class TestApp
         firstTree.Add(8, "8");
         firstTree.Add(5, "5");
 
+        foreach (var node in firstTree)
+        {
+            Console.WriteLine(node.Key + " " + node.Value);
+        }
+        Console.WriteLine();
+
         firstTree.Remove(8);
         BST<int, string> secondTree = (BST<int, string>)firstTree.Clone();
 
@@ -40,7 +46,6 @@ class TestApp
         fourthTree.Add(1, "1");
         fourthTree.Add(1, "one");
         Console.WriteLine(fourthTree);
-
     }
 }
 

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-public delegate void EventHandler(object sender, EventArgs args);
+public delegate void EventHandler(object sender);
 
 public class Timer
 {
@@ -27,13 +27,13 @@ public class Timer
         }
     }
 
-    protected virtual void OnTick(EventArgs args)
+    protected virtual void OnTick()
     {
         EventHandler handler = Tick;
 
         if (handler != null)
         {
-            handler(this, args);
+            handler(this);
         }
     }
 
@@ -46,7 +46,7 @@ public class Timer
             {
                 if (terminated == false)
                 {
-                    OnTick(null);
+                    OnTick();
                 }
                 else
                 {

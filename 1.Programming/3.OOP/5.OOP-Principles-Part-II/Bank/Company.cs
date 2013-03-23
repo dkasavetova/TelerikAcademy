@@ -1,0 +1,4 @@
+﻿class Company : Customer
+{
+}
+
